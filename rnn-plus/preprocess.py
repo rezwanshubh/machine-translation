@@ -1,8 +1,38 @@
 import argparse
 import json
 import torch
+import codecs
+
+
+def convert_instance_to_idx_seq(word_insts, word2idx):
+    ''' Mapping words to idx sequence. '''
+    idx_seqs = []
+    for inst in word_insts:
+        idx_seq = []
+        for token in inst:
+            try:
+                idx_seq.append(word2idx[token])
+            except:
+                idx_seq.append(word2idx['<UNK>'])
+        idx_seqs.append(idx_seq)
+
+    return idx_seqs
+
+
+def read_image_instances_from_file(inst_file):
+    ''' Convert file into lists '''
+
+    image_insts = []
+    f = codecs.open(inst_file, encoding="utf-8").readlines()
+    for sent in f:
+        image_insts += [sent.strip()]
+
+    return image_insts
+
 
 def read_instances_from_file(inst_file, max_sent_len):
+    ''' Convert file into word seq lists '''
+
     word_insts = []
     trimmed_sent_count = 0
     with open(inst_file) as f:
@@ -25,81 +55,69 @@ def read_instances_from_file(inst_file, max_sent_len):
 
     return word_insts
 
-def convert_instance_to_idx_seq(word_insts, word2idx):
-    idx_seq_arr = []
-    for instance in word_insts:
-        idx_seq = []
-        for token in instance:
-            try:
-                idx_seq.append(word2idx[token])
-            except:
-                idx_seq.append(word2idx['<UNK>'])
-        idx_seq_arr.append(idx_seq)
-
-    return idx_seq_arr
-
-
 
 def main():
-    print('test')
+    ''' Main function '''
 
-    arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('-train_data_src', required=True)
-    arg_parser.add_argument('-train_data_tgt', required=True)
-    arg_parser.add_argument('-valid_data_src', required=True)
-    arg_parser.add_argument('-valid_data_tgt', required=True)
-    arg_parser.add_argument('-vocab_data_src', required=True)
-    arg_parser.add_argument('-vocab_data_tgt', required=True)
-    arg_parser.add_argument('-save_all_data', required=True)
-    arg_parser.add_argument('-max_len', '--max_word_seq_len', type=int, default=50)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-train_src', required=True)
+    parser.add_argument('-train_tgt', required=True)
+    parser.add_argument('-valid_src', required=True)
+    parser.add_argument('-valid_tgt', required=True)
+    parser.add_argument('-src_vocab', required=True)
+    parser.add_argument('-tgt_vocab', required=True)
+    parser.add_argument('-save_data', required=True)
+    parser.add_argument('-max_len', '--max_word_seq_len', type=int, default=50)
 
-    opt = arg_parser.parse_args()
-    opt.max_token_seq_len = opt.max_word_seq_len + 2    #test
+    opt = parser.parse_args()
+    opt.max_token_seq_len = opt.max_word_seq_len + 2
 
     # Training set
-    train_src_word_inststance = read_instances_from_file(opt.train_src, opt.max_word_seq_len)
-    train_tgt_word_inststance = read_instances_from_file(opt.train_tgt, opt.max_word_seq_len)
 
-    if len(train_src_word_inststance) != len(train_tgt_word_inststance):
-        print('warn: If training instance count is not equal!')
-        quit()
+    train_src_word_insts = read_instances_from_file(opt.train_src, opt.max_word_seq_len)
+    train_tgt_word_insts = read_instances_from_file(opt.train_tgt, opt.max_word_seq_len)
 
-    # validation set
-    valid_src_word_instance = read_instances_from_file(opt.valid_src, opt.max_word_seq_len)
-    valid_tgt_word_instance = read_instances_from_file(opt.valid_tgt, opt.max_word_seq_len)
+    if len(train_src_word_insts) != len(train_tgt_word_insts):
+        print('[Warning] The training instance count is not equal!')
+        exit()
 
-    if len(valid_src_word_instance) != len(valid_tgt_word_instance):
-        print('warn: If validation instance count is not equal')
-        quit()
+    # Validation set
+    valid_src_word_insts = read_instances_from_file(opt.valid_src, opt.max_word_seq_len)
+    valid_tgt_word_insts = read_instances_from_file(opt.valid_tgt, opt.max_word_seq_len)
 
-    # vocabulary
-    src_word_to_idx = json.load(open(opt.src_vocab)) # inter data exchange
-    tgt_word_to_idx = json.load(open(opt.tgt_vocab))
+    if len(valid_src_word_insts) != len(valid_tgt_word_insts):
+        print('[Warning] The validation instance count is not equal')
+        exit()
+
+    # Build vocabulary
+    src_word2idx = json.load(open(opt.src_vocab))
+    tgt_word2idx = json.load(open(opt.tgt_vocab))
 
     # word to index
-    print('info: convert source word to sequence of words')
-    train_src_instance = convert_instance_to_idx_seq(train_src_word_inststance, src_word_to_idx)
-    valid_src_instance = convert_instance_to_idx_seq(valid_src_word_instance, src_word_to_idx)
+    print('[Info] Convert source word instances into sequences of word index.')
+    train_src_insts = convert_instance_to_idx_seq(train_src_word_insts, src_word2idx)
+    valid_src_insts = convert_instance_to_idx_seq(valid_src_word_insts, src_word2idx)
 
-    print('info: convert target word to sequence of words.')
-    train_tgt_instance = convert_instance_to_idx_seq(train_tgt_word_inststance, tgt_word_to_idx)
-    valid_tgt_instance = convert_instance_to_idx_seq(valid_tgt_word_instance, tgt_word_to_idx)
+    print('[Info] Convert target word instances into sequences of word index.')
+    train_tgt_insts = convert_instance_to_idx_seq(train_tgt_word_insts, tgt_word2idx)
+    valid_tgt_insts = convert_instance_to_idx_seq(valid_tgt_word_insts, tgt_word2idx)
 
     data = {
         'settings': opt,
         'dict': {
-            'src': src_word_to_idx,
-            'tgt': tgt_word_to_idx},
+            'src': src_word2idx,
+            'tgt': tgt_word2idx},
         'train': {
-            'src': train_src_instance,
-            'tgt': train_tgt_instance},
+            'src': train_src_insts,
+            'tgt': train_tgt_insts},
         'valid': {
-            'src': valid_src_instance,
-            'tgt': valid_tgt_instance}}
+            'src': valid_src_insts,
+            'tgt': valid_tgt_insts}}
 
-    print('info: save all processed data into a file', opt.save_data)
+    print('[Info] Dumping the processed data to pickle file', opt.save_data)
     torch.save(data, opt.save_data)
-    print('---done---')
+    print('[Info] Finish.')
+
 
 if __name__ == '__main__':
-	main()
+    main()
