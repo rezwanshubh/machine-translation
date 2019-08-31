@@ -19,17 +19,6 @@ def convert_instance_to_idx_seq(word_insts, word2idx):
     return idx_seqs
 
 
-def read_image_instances_from_file(inst_file):
-    ''' Convert file into lists '''
-
-    image_insts = []
-    f = codecs.open(inst_file, encoding="utf-8").readlines()
-    for sent in f:
-        image_insts += [sent.strip()]
-
-    return image_insts
-
-
 def read_instances_from_file(inst_file, max_sent_len):
     ''' Convert file into word seq lists '''
 
@@ -73,11 +62,10 @@ def main():
     opt.max_token_seq_len = opt.max_word_seq_len + 2
 
     # Training set
-
     train_src_word_insts = read_instances_from_file(opt.train_src, opt.max_word_seq_len)
     train_tgt_word_insts = read_instances_from_file(opt.train_tgt, opt.max_word_seq_len)
 
-    if len(train_src_word_insts) != len(train_tgt_word_insts):
+    if not (len(train_src_word_insts) == len(train_tgt_word_insts)):
         print('[Warning] The training instance count is not equal!')
         exit()
 
@@ -85,7 +73,7 @@ def main():
     valid_src_word_insts = read_instances_from_file(opt.valid_src, opt.max_word_seq_len)
     valid_tgt_word_insts = read_instances_from_file(opt.valid_tgt, opt.max_word_seq_len)
 
-    if len(valid_src_word_insts) != len(valid_tgt_word_insts):
+    if not (len(valid_src_word_insts) == len(valid_tgt_word_insts)):
         print('[Warning] The validation instance count is not equal')
         exit()
 
