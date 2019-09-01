@@ -15,7 +15,7 @@ python ./rnn-plus/preprocess.py \
 -train_tgt ../dataset/et.train.enc \
 -valid_src ../dataset/en.dev.enc \
 -valid_tgt ../dataset/et.dev.enc \
--src_vocab ../dataset/en.bpe.train.json \
--tgt_vocab ../dataset/et.bpe.train.json \
+-src_vocab ../dataset/en.train.enc.json \
+-tgt_vocab ../dataset/et.train.enc.json \
 -save_data ./saved_preprocessed_data_10.pt \
--max_len 50
+-max_len 1000
