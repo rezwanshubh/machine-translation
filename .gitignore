@@ -1,5 +1,4 @@
-rnn-plus/data/
-#-------
+rnn-plus/data/*
 
 
 # ------------- from gitignore template -------------
