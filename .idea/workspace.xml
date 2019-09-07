@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/seq2seq/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn-plus/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transformer/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567618406215</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding readme.">
+      <created>1567881253923</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1567881253923</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +229,7 @@
     <MESSAGE value="update bash script" />
     <MESSAGE value="add .gitignore from template." />
     <MESSAGE value="delete useless files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete useless files" />
+    <MESSAGE value="adding readme." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding readme." />
   </component>
 </project>
