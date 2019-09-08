@@ -1,10 +1,15 @@
 from torch import nn
-
 from rnn_plus.rnn_plus_model.keyvalue_attention import KeyValAttention
+
 import torch
 
 
 class MultiHeadAttention(nn.Module):
+    """The implementation of multi-head attention.
+
+    Following the original description in the transformer paper.
+    """
+
     _RELATIVE_POS_CLIP = 2
 
     def __init__(self, out_size, num_head=8, hidden_size=None, additive=False, dropout_ratio=0, relative_pos=False):
@@ -21,6 +26,7 @@ class MultiHeadAttention(nn.Module):
             self.relative_posmatrix = None
         self._attention = KeyValAttention(scaling=True, dropout_ratio=dropout_ratio, )
         if additive:
+            # Taken from RNMT+ paper
             raise NotImplementedError
         else:
             self.linear_Q = nn.Linear(out_size, hidden_size)
@@ -29,6 +35,8 @@ class MultiHeadAttention(nn.Module):
         self.linear_O = nn.Linear(hidden_size, out_size)
 
     def forward_2d(self, query, keys, values, mask=None):
+        """Compute attention for 2-dimensional queries (batch x hidden).
+        """
         query = query.unsqueeze(1)  # (B, 1, H)
         context_vectors, weights = self.forward_3d(query, keys, values, mask=mask)
         context_vectors = context_vectors.squeeze(1)
@@ -36,6 +44,8 @@ class MultiHeadAttention(nn.Module):
         return context_vectors, weights
 
     def forward_3d(self, query, keys, values, mask=None):
+        """Compute attention for 3-dimensional input (batch x step x hidden).
+        """
         B = query.shape[0]
         head_dim = self._hidden_size // self._num_head
         transformed_query = self.linear_Q(query)
@@ -66,6 +76,11 @@ class MultiHeadAttention(nn.Module):
         return context_vectors, weights
 
     def forward(self, query, keys, values, mask=None):
+        """Compute the context vector with key value attention.
+
+        Returns:
+            context vector and attention weights.
+        """
         if query.dim() == 2:
             return self.forward_2d(query, keys, values, mask)
         elif query.dim() == 3:
