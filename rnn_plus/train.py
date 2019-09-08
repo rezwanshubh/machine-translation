@@ -14,6 +14,8 @@ import rnn_plus.rnn_plus_model.constant as Constant
 
 
 def get_performance(crit, pred, gold, smoothing=False, num_class=None):
+    ''' Apply label smoothing if needed '''
+
     # TODO: Add smoothing
     if smoothing:
         assert bool(num_class)
