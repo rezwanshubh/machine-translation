@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rnn_plus/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rnn_plus/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/rnnplus-model/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/script/test_bash_en-et.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/script/test_bash_en-et.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/script/test_bash_et-en.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/script/test_bash_et-en.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn-plus/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/translate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnn_plus/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/preprocess.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567881586569</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'">
+      <created>1567941767185</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1567941767185</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +265,7 @@
     <MESSAGE value="add .gitignore from template." />
     <MESSAGE value="delete useless files" />
     <MESSAGE value="adding readme." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding readme." />
+    <MESSAGE value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
+    <option name="LAST_COMMIT_MESSAGE" value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
   </component>
 </project>

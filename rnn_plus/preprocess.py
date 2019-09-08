@@ -1,8 +1,6 @@
 import argparse
 import json
 import torch
-import codecs
-
 
 def convert_instance_to_idx_seq(word_insts, word2idx):
     ''' Mapping words to idx sequence. '''
