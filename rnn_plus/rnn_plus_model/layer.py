@@ -2,6 +2,7 @@ from torch import nn
 
 
 class EncoderLayer(nn.Module):
+
     def __init__(self, d_embed, d_hidden):
         super(EncoderLayer, self).__init__()
         self.encoder_gru = nn.GRU(d_embed, d_hidden, batch_first=True, bidirectional=True)
@@ -12,6 +13,8 @@ class EncoderLayer(nn.Module):
 
 
 class DecoderLayer(nn.Module):
+    ''' Compose with three layers '''
+
     def __init__(self, d_embed, d_hidden):
         super(DecoderLayer, self).__init__()
         self.decoder_gru = nn.GRU(d_embed, d_hidden, batch_first=True)

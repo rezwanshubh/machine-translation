@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/rnn_plus/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/layer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567972183866</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update comment.">
+      <created>1567972337835</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1567972337835</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +289,7 @@
     <MESSAGE value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
     <MESSAGE value="remove unused import." />
     <MESSAGE value="Modify the implementation of RNMT+ based upon LSTM." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify the implementation of RNMT+ based upon LSTM." />
+    <MESSAGE value="update comment." />
+    <option name="LAST_COMMIT_MESSAGE" value="update comment." />
   </component>
 </project>
