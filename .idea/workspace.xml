@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/rnn_plus/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnn_plus/data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/keyvalue_attention.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/layer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/mutihead_attention.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnn_plus/rnn_plus_model/optim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnn_plus/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567941767185</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="remove unused import.">
+      <created>1567941793102</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1567941793102</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +280,7 @@
     <MESSAGE value="delete useless files" />
     <MESSAGE value="adding readme." />
     <MESSAGE value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
-    <option name="LAST_COMMIT_MESSAGE" value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
+    <MESSAGE value="remove unused import." />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused import." />
   </component>
 </project>

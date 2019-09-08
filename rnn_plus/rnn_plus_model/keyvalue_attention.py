@@ -1,0 +1,42 @@
+from torch import nn
+
+import math
+import torch
+import torch.nn.functional as F
+
+
+class KeyValAttention(nn.Module):
+
+    def __init__(self, scaling=False, dropout_ratio=0):
+        super(KeyValAttention, self).__init__()
+        self._scaling = scaling
+        self._dropout = nn.Dropout(dropout_ratio) if dropout_ratio > 0 else None
+
+    def forward_2d(self, query, keys, values, mask=None, additional_logits=None):
+        context_vector, weights = self.forward_3d(query.unsqueeze(-2), keys, values, mask, additional_logits)
+        return context_vector.squeeze(-2), weights.squeeze(-2)
+
+    def forward_3d(self, query, keys, values, mask=None, additional_logits=None):
+        logits = torch.matmul(query, keys.transpose(-2, -1))
+        if additional_logits is not None:
+            logits += additional_logits
+        if self._scaling:
+            logits /= math.sqrt(query.shape[-1])
+        if mask is not None:
+            if self._dropout is not None:
+                mask = self._dropout(mask)
+            if mask.dim() < logits.dim():
+                mask = mask.unsqueeze(-2)
+            logits = logits.masked_fill(mask == 0, -1e9)
+        elif self._dropout is not None:
+            mask = self._dropout(logits.new_ones(logits.shape))
+            logits = logits.masked_fill(mask == 0, -1e9)
+        weights = F.softmax(logits, dim=-1)
+        context_vector = torch.matmul(weights, values)
+        return context_vector, weights
+
+    def forward(self, query, keys, values, mask=None, additional_logits=None):
+        if query.dim() == keys.dim() - 1:
+            return self.forward_2d(query, keys, values, mask, additional_logits=additional_logits)
+        else:
+            return self.forward_3d(query, keys, values, mask, additional_logits=additional_logits)
