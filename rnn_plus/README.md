@@ -1,1 +1,1 @@
-English - Estonian machine translation with rnn-plus.
+English - Estonian machine translation with rnmt-plus.
