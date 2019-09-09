@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/rnmt_plus/script/train_en-et.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn_plus/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rnn_plus/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../relational-rnn-pytorch" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -293,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567973596634</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update readme file.">
+      <created>1568014455718</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1568014455718</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Refactoring package name.">
+      <created>1568014538387</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1568014538387</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,6 +340,8 @@
     <MESSAGE value="remove unused import." />
     <MESSAGE value="Modify the implementation of RNMT+ based upon LSTM." />
     <MESSAGE value="update comment." />
-    <option name="LAST_COMMIT_MESSAGE" value="update comment." />
+    <MESSAGE value="update readme file." />
+    <MESSAGE value="Refactoring package name." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring package name." />
   </component>
 </project>
