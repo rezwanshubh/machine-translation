@@ -3,7 +3,7 @@ from torch.autograd import Variable
 import random
 import numpy as np
 import torch
-import rnmt_plus.rnmt_plus_model.Constants as Constants
+import rnmt_plus.rnmt_plus_model.constant as Constant
 
 
 class DataLoader(object):
@@ -107,11 +107,11 @@ class DataLoader(object):
             max_len = max(len(inst) for inst in insts)
 
             inst_data = np.array([
-                inst + [Constants.PAD] * (max_len - len(inst))
+                inst + [Constant.PAD] * (max_len - len(inst))
                 for inst in insts])
 
             inst_position = np.array([
-                [pos_i + 1 if w_i != Constants.PAD else 0 for pos_i, w_i in enumerate(inst)]
+                [pos_i + 1 if w_i != Constant.PAD else 0 for pos_i, w_i in enumerate(inst)]
                 for inst in inst_data])
 
             inst_data_tensor = Variable(torch.LongTensor(inst_data), volatile=self.test)
