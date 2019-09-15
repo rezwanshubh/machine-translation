@@ -366,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568058859194</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="--incomplete. Implementation of model based on Relational-RNN.">
+      <created>1568504125053</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1568504125053</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,6 +409,7 @@
     <MESSAGE value="update readme file." />
     <MESSAGE value="Refactoring package name." />
     <MESSAGE value="define package" />
-    <option name="LAST_COMMIT_MESSAGE" value="define package" />
+    <MESSAGE value="--incomplete. Implementation of model based on Relational-RNN." />
+    <option name="LAST_COMMIT_MESSAGE" value="--incomplete. Implementation of model based on Relational-RNN." />
   </component>
 </project>

@@ -1,5 +1,3 @@
-''' Define the Transformer model '''
-
 from torch import nn
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from rnmt_plus.rnmt_plus_model.layer import EncoderLayer, DecoderLayer
@@ -15,18 +13,16 @@ class TextEncoder(nn.Module):
     ''' RNMT+ Encoder. '''
 
     def __init__(self, n_src_vocab, n_layers=6, d_word_vec=1024, d_model=1024, dropout=0.1):
-
         super(TextEncoder, self).__init__()
         self.d_model = d_model
         self.src_embed_layer = nn.Embedding(n_src_vocab, d_word_vec, padding_idx=Constant.PAD)
 
         self.layer_stack = []
-
-        for l in range(n_layers):
-            if l == 0:
-                self.layer_stack.append(EncoderLayer(d_model, d_model))
-            else:
-                self.layer_stack.append(EncoderLayer(d_model * 2, d_model))
+        for i in range(n_layers):
+            self.layer_stack.append(getattr(nn)(d_model, d_model))
+            if i < n_layers - 1:
+                self.layer_stack.append(nn.Dropout(dropout))
+        self.rnn = nn.ModuleList(self.layer_stack)
 
         self.layer_stack = nn.ModuleList(self.layer_stack)
         self.dropout = nn.Dropout(dropout)
@@ -76,12 +72,15 @@ class Decoder(nn.Module):
 
         self.tgt_embed_layer = nn.Embedding(n_tgt_vocab, d_word_vec, padding_idx=Constant.PAD)
         self.dropout = nn.Dropout(dropout)
+
         self.layer_stack = []
-        for l in range(n_layers):
-            if l == 0:
-                self.layer_stack.append(DecoderLayer(d_model, d_model))
-            else:
-                self.layer_stack.append(DecoderLayer(d_model * 2, d_model))
+
+        for i in range(n_layers):
+            self.layer_stack.append(getattr(nn)(d_model, d_model))
+            if i < n_layers - 1:
+                self.layer_stack.append(nn.Dropout(dropout))
+        self.rnn = nn.ModuleList(self.layer_stack)
+
         self.layer_stack = nn.ModuleList(self.layer_stack)
         self.attention_txt = MultiHeadAttention(d_model, n_head)
         self.residual_scaler = torch.sqrt(torch.from_numpy(np.array(0.5, dtype="float32")))
@@ -136,7 +135,7 @@ class RNMTPlus(nn.Module):
 
         assert d_model == d_word_vec, \
             'To facilitate the residual connections, \
-             the dimensions of all module output shall be the same.'
+         the dimensions of all module output shall be the same.'
 
     def get_trainable_parameters(self):
         params = list(p for p in self.parameters())
