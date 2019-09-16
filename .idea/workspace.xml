@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fairseq/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uns_nmt/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sequential" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -400,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568630568041</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fairseq implementation.">
+      <created>1568637452987</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1568637452987</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,6 +446,7 @@
     <MESSAGE value="--incomplete. Implementation of model based on Relational-RNN." />
     <MESSAGE value="Relation-RNN model." />
     <MESSAGE value="repair package import" />
-    <option name="LAST_COMMIT_MESSAGE" value="repair package import" />
+    <MESSAGE value="fairseq implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="fairseq implementation." />
   </component>
 </project>
