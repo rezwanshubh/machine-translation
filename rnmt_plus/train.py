@@ -1,7 +1,7 @@
 from tqdm import tqdm
-from rnmt_plus.rnmt_plus_model.model import RNMTPlus
-from rnmt_plus.rnmt_plus_model.optim import ScheduledOptim
-from rnmt_plus.data_loader import DataLoader
+from rnmt_plus_model.model import RNMTPlus
+from rnmt_plus_model.optim import ScheduledOptim
+from data_loader import DataLoader
 
 import argparse
 import math
@@ -10,7 +10,7 @@ import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import rnmt_plus.rnmt_plus_model.constant as Constant
+import rnmt_plus_model.constant as Constant
 
 
 def get_performance(crit, pred, gold, smoothing=False, num_class=None):

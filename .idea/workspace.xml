@@ -4,7 +4,7 @@
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/test_and_delete.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnmt_plus/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../relational-rnn-pytorch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sequential" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -373,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568504125053</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Relation-RNN model.">
+      <created>1568549101642</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1568549101642</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,6 +417,7 @@
     <MESSAGE value="Refactoring package name." />
     <MESSAGE value="define package" />
     <MESSAGE value="--incomplete. Implementation of model based on Relational-RNN." />
-    <option name="LAST_COMMIT_MESSAGE" value="--incomplete. Implementation of model based on Relational-RNN." />
+    <MESSAGE value="Relation-RNN model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Relation-RNN model." />
   </component>
 </project>
