@@ -353,4 +353,5 @@ def main(params):
 if __name__ == '__main__':
     parser = get_parser()
     params = parser.parse_args()
+    print(params + '--------')
     main(params)

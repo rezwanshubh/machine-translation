@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uns_nmt/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uns_nmt/UnsupervisedMT/NMT/get_data_enfr.sh" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/UnsupervisedMT/NMT/get_data_enfr.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uns_nmt/UnsupervisedMT/NMT/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/UnsupervisedMT/NMT/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -407,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568637452987</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Phrase-Based &amp; Neural Unsupervised Machine Translation">
+      <created>1568650679355</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1568650679355</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -447,6 +455,7 @@
     <MESSAGE value="Relation-RNN model." />
     <MESSAGE value="repair package import" />
     <MESSAGE value="fairseq implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="fairseq implementation." />
+    <MESSAGE value="Phrase-Based &amp; Neural Unsupervised Machine Translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phrase-Based &amp; Neural Unsupervised Machine Translation" />
   </component>
 </project>
