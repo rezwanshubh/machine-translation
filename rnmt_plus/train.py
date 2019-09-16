@@ -1,8 +1,9 @@
-from tqdm import tqdm
+
 from rnmt_plus_model.model import RNMTPlus
 from rnmt_plus_model.optim import ScheduledOptim
 from data_loader import DataLoader
 
+import tqdm
 import argparse
 import math
 import time

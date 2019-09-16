@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/data_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/mutihead_attention.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/mutihead_attention.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnmt_plus/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -388,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568623961647</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="repair package import">
+      <created>1568624208869</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1568624208869</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
