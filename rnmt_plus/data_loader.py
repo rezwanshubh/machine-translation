@@ -3,7 +3,7 @@ from torch.autograd import Variable
 import random
 import numpy as np
 import torch
-import rnmt_plus.rnmt_plus_model.constant as Constant
+import rnmt_plus_model.constant as Constant
 
 
 class DataLoader(object):

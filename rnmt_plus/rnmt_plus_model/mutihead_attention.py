@@ -1,5 +1,5 @@
 from torch import nn
-from rnmt_plus.rnmt_plus_model.keyvalue_attention import KeyValAttention
+from rnmt_plus_model.keyvalue_attention import KeyValAttention
 
 import torch
 
