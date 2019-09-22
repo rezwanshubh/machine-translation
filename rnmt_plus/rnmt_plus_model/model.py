@@ -19,7 +19,7 @@ class TextEncoder(nn.Module):
 
         self.layer_stack = []
         for i in range(n_layers):
-            self.layer_stack.append(getattr(nn)(d_model, d_model))
+            self.layer_stack.append(getattr(nn, 'LSTM')(300, 300, n_layers, dropout=dropout))
             if i < n_layers - 1:
                 self.layer_stack.append(nn.Dropout(dropout))
         self.rnn = nn.ModuleList(self.layer_stack)
@@ -76,7 +76,7 @@ class Decoder(nn.Module):
         self.layer_stack = []
 
         for i in range(n_layers):
-            self.layer_stack.append(getattr(nn)(d_model, d_model))
+            self.layer_stack.append(getattr(nn, 'LSTM')(300, 300, n_layers, dropout=dropout))
             if i < n_layers - 1:
                 self.layer_stack.append(nn.Dropout(dropout))
         self.rnn = nn.ModuleList(self.layer_stack)
