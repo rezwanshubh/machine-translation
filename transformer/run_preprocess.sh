@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+#SBATCH --job-name=rez_transformer
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:tesla:1
+#SBATCH --time=7-
+#SBATCH --cpus=1
+#SBATCH --mem-per-cpu=120000
 
 python ./OpenNMT-py/preprocess.py \
 -train_src data/src-train.txt \
