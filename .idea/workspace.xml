@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
+    <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="update preprocess script for gpu">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uns_nmt/XLM/get-data-para.sh" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/XLM/get-data-para.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uns_nmt/XLM/get-data-wiki.sh" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/XLM/get-data-wiki.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uns_nmt/XLM/src/data/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/XLM/src/data/loader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PgB5BUPeM6vZUX0m33wsTwxLXc" />

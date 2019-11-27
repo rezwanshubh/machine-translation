@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Copyright (c) 2019-present, Facebook, Inc.
 # All rights reserved.
 #
@@ -32,6 +33,15 @@ mkdir -p $PARA_PATH
 #
 # Download and uncompress data
 #
+
+# en-et
+if [ $pair == "en-et" ]; then
+  # OpenSubtitles 2018
+  # wget -c http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fen-et.txt.zip -P $PARA_PATH
+  # MultiUN
+  wget -c https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2018/moses/en-et.txt.zip -P $PARA_PATH
+  unzip -u $PARA_PATH/en-et.txt.zip -d $PARA_PATH
+fi
 
 # ar-en
 if [ $pair == "ar-en" ]; then

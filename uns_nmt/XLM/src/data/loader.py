@@ -75,6 +75,8 @@ def set_dico_parameters(params, data, dico):
     Update dictionary parameters.
     """
     if 'dico' in data:
+        print(data['dico'] )
+        print(dico)
         assert data['dico'] == dico
     else:
         data['dico'] = dico

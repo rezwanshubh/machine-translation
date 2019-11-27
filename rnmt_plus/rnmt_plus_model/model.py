@@ -2,11 +2,14 @@ from torch import nn
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from rnmt_plus_model.layer import EncoderLayer, DecoderLayer
 from rnmt_plus_model.mutihead_attention import MultiHeadAttention
+from rnmt_plus_model.layer import EncoderLayer, DecoderLayer
+from rnmt_plus.rnmt_plus_model.layer import EncoderLayer, DecoderLayer
 
 import torch
 import numpy as np
 import torch.nn.functional as F
-import rnmt_plus_model.constant as Constant
+#import rnmt_plus_model.constant as Constants
+import rnmt_plus.rnmt_plus_model.constant as Constants
 
 
 class TextEncoder(nn.Module):
@@ -14,19 +17,22 @@ class TextEncoder(nn.Module):
 
     def __init__(self, n_src_vocab, n_layers=6, d_word_vec=1024, d_model=1024, dropout=0.1):
         super(TextEncoder, self).__init__()
+
         self.d_model = d_model
-        self.src_embed_layer = nn.Embedding(n_src_vocab, d_word_vec, padding_idx=Constant.PAD)
+        self.src_embed_layer = nn.Embedding(n_src_vocab, d_word_vec, padding_idx=Constants.PAD)
 
         self.layer_stack = []
-        for i in range(n_layers):
-            self.layer_stack.append(getattr(nn, 'LSTM')(300, 300, n_layers, dropout=dropout))
-            if i < n_layers - 1:
-                self.layer_stack.append(nn.Dropout(dropout))
-        self.rnn = nn.ModuleList(self.layer_stack)
-
+        for l in range(n_layers):
+            if l == 0:
+                self.layer_stack.append(EncoderLayer(d_model, d_model))
+            else:
+                self.layer_stack.append(EncoderLayer(d_model * 2, d_model))
         self.layer_stack = nn.ModuleList(self.layer_stack)
+
         self.dropout = nn.Dropout(dropout)
+
         self.residual_scaler = torch.sqrt(torch.from_numpy(np.array(0.5, dtype="float32")))
+
         self.project_nn = nn.Linear(d_model * 2, d_model)
         self.project_init = nn.Linear(d_model * 2, d_model)
 
@@ -69,20 +75,19 @@ class Decoder(nn.Module):
         super(Decoder, self).__init__()
 
         self.d_model = d_model
-
-        self.tgt_embed_layer = nn.Embedding(n_tgt_vocab, d_word_vec, padding_idx=Constant.PAD)
+        self.tgt_embed_layer = nn.Embedding(n_tgt_vocab, d_word_vec, padding_idx=Constants.PAD)
         self.dropout = nn.Dropout(dropout)
 
         self.layer_stack = []
-
-        for i in range(n_layers):
-            self.layer_stack.append(getattr(nn, 'LSTM')(300, 300, n_layers, dropout=dropout))
-            if i < n_layers - 1:
-                self.layer_stack.append(nn.Dropout(dropout))
-        self.rnn = nn.ModuleList(self.layer_stack)
-
+        for l in range(n_layers):
+            if l == 0:
+                self.layer_stack.append(DecoderLayer(d_model, d_model))
+            else:
+                self.layer_stack.append(DecoderLayer(d_model * 2, d_model))
         self.layer_stack = nn.ModuleList(self.layer_stack)
+
         self.attention_txt = MultiHeadAttention(d_model, n_head)
+
         self.residual_scaler = torch.sqrt(torch.from_numpy(np.array(0.5, dtype="float32")))
 
     def forward(self, tgt_seq, encoder_outputs, return_attns=False):
