@@ -1,15 +1,12 @@
 from torch import nn
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-from rnmt_plus_model.layer import EncoderLayer, DecoderLayer
 from rnmt_plus_model.mutihead_attention import MultiHeadAttention
 from rnmt_plus_model.layer import EncoderLayer, DecoderLayer
-from rnmt_plus.rnmt_plus_model.layer import EncoderLayer, DecoderLayer
 
 import torch
 import numpy as np
 import torch.nn.functional as F
-#import rnmt_plus_model.constant as Constants
-import rnmt_plus.rnmt_plus_model.constant as Constants
+import rnmt_plus_model.constant as Constants
 
 
 class TextEncoder(nn.Module):
