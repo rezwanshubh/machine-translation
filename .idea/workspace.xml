@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="update preprocess script for gpu">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/relational_rnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/layer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uns_nmt/XLM/get-data-para.sh" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/XLM/get-data-para.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uns_nmt/XLM/get-data-wiki.sh" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/XLM/get-data-wiki.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uns_nmt/XLM/src/data/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/uns_nmt/XLM/src/data/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_and_delete.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pytorch-Relational-Recurrent-Neural-networks" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
