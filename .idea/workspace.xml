@@ -4,7 +4,6 @@
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="update preprocess script for gpu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/layer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/relational_rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnmt_plus/rnmt_plus_model/relational_rnn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
