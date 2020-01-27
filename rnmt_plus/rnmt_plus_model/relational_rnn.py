@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from rnmt_plus_model.mutihead_attention import MultiHeadAttention
+from rnmt_plus_model.attention_layer import Attention_layer
 import pdb
 
 
@@ -32,7 +33,7 @@ class RelationalRNN(nn.Module):
 
         if attention_mlp_layers < 1:
             raise ValueError('attnetion mlp layers must be >1. But got:{}'.format(attention_mlp_layers))
-        self.mhdpa_layers = MultiHeadAttention(self.head_size, self.num_heads, num_blocks, attention_mlp_layers, dropout_p)
+        self.mhdpa_layers = Attention_layer(self.head_size, self.num_heads, num_blocks, attention_mlp_layers, dropout_p)
 
 
         # gate initialization
