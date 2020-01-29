@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .sub_layers import mlp_layers
+from rnmt_plus_model.sub_layers import mlp_layers
 import numpy as np
 
 
