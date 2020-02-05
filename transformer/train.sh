@@ -6,7 +6,7 @@
 #SBATCH --cpus=1
 #SBATCH --mem-per-cpu=120000
 
-python ./OpenNMT-py/train.py -data ./data_v2/ -save_model ./models/ \
+python ./OpenNMT-py/train.py -data ./data_v2/demo -save_model ./models/ \
         -layers 6 -rnn_size 512 -word_vec_size 512 -transformer_ff 2048 -heads 8  \
         -encoder_type transformer -decoder_type transformer -position_encoding \
         -train_steps 350836  -max_generator_batches 2 -dropout 0.1 \
