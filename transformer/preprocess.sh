@@ -7,8 +7,8 @@
 #SBATCH --mem-per-cpu=120000
 
 python ./OpenNMT-py/preprocess.py \
--train_src data/src-train.txt \
--train_tgt data/tgt-train.txt \
--valid_src data/src-val.txt \
--valid_tgt data/tgt-val.txt \
+-train_src data/en.train.enc \
+-train_tgt data/et.train.enc \
+-valid_src data/en.dev.enc \
+-valid_tgt data/et.dev.enc \
 -save_data data_v2/demo

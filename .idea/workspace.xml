@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/transformer/preprocess.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformer/preprocess.sh" beforeDir="false" afterPath="$PROJECT_DIR$/transformer/preprocess.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -461,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580896770390</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Preprocess script updated for Transformer">
+      <created>1580898845100</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1580898845100</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ready data preprocess." />
     <MESSAGE value="remove unnecessary files." />
     <MESSAGE value="update preprocess" />
     <MESSAGE value="update bash script" />
@@ -504,6 +510,7 @@
     <MESSAGE value="update ide files" />
     <MESSAGE value="update preprocess script for gpu" />
     <MESSAGE value="Delete fairseq" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete fairseq" />
+    <MESSAGE value="Preprocess script updated for Transformer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preprocess script updated for Transformer" />
   </component>
 </project>
