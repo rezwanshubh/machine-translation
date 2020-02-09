@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluation/myfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/myfile_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/text_formatter_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564147007264</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit for preprocess, train and translate.">
-      <created>1564832771094</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1564832771094</updated>
     </task>
     <task id="LOCAL-00002" summary="preprocess">
       <created>1565358482344</created>
@@ -527,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581239214928</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Update file formatter test">
+      <created>1581245780408</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1581245780409</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +540,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update bash script" />
     <MESSAGE value="add .gitignore from template." />
     <MESSAGE value="delete useless files" />
     <MESSAGE value="adding readme." />
@@ -570,6 +564,7 @@
     <MESSAGE value="Preprocess script updated for Transformer" />
     <MESSAGE value="Training script updated for Transformer" />
     <MESSAGE value="Update initial script for evaluation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update initial script for evaluation" />
+    <MESSAGE value="Update file formatter test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update file formatter test" />
   </component>
 </project>
