@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluation/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/run_evaluation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/run_translate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/myfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/myfile_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/text_formatter_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_and_delete">
+  <component name="RunManager" selected="Python.run_translate">
     <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine-translation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,6 +71,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\rezwan_personal\thesis\machine-translation\rnn_plus\preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_translate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine-translation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluation/run_translate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,6 +165,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_translate" />
         <item itemvalue="Python.test_and_delete" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.preprocess" />
@@ -498,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580905052806</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Update initial script for evaluation">
+      <created>1581239214928</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1581239214928</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +545,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update preprocess" />
     <MESSAGE value="update bash script" />
     <MESSAGE value="add .gitignore from template." />
     <MESSAGE value="delete useless files" />
@@ -541,6 +569,7 @@
     <MESSAGE value="Delete fairseq" />
     <MESSAGE value="Preprocess script updated for Transformer" />
     <MESSAGE value="Training script updated for Transformer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Training script updated for Transformer" />
+    <MESSAGE value="Update initial script for evaluation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update initial script for evaluation" />
   </component>
 </project>
