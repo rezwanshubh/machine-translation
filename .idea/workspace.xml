@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="" />
+    <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/evaluation/rnmt_plus_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/sequence_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/transformer_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/unsupervised_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seq2seq/seq2seq_translation_tutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/run_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/run_evaluation.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/test-10" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -52,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_translate">
+  <component name="RunManager" selected="Python.run_evaluation">
     <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine-translation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,6 +74,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\rezwan_personal\thesis\machine-translation\rnn_plus\preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine-translation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluation/run_evaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,34 +166,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="translate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machine-translation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rnn-plus" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\rezwan_personal\thesis\machine-translation\rnn_plus\translate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_evaluation" />
         <item itemvalue="Python.run_translate" />
         <item itemvalue="Python.test_and_delete" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.preprocess" />
-        <item itemvalue="Python.translate" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564147007264</updated>
-    </task>
-    <task id="LOCAL-00002" summary="preprocess">
-      <created>1565358482344</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1565358482344</updated>
     </task>
     <task id="LOCAL-00003" summary="preparing files for parser.">
       <created>1565364438852</created>
@@ -522,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581245780409</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Update files.">
+      <created>1581246993303</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1581246993303</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add .gitignore from template." />
     <MESSAGE value="delete useless files" />
     <MESSAGE value="adding readme." />
     <MESSAGE value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
@@ -565,6 +572,7 @@
     <MESSAGE value="Training script updated for Transformer" />
     <MESSAGE value="Update initial script for evaluation" />
     <MESSAGE value="Update file formatter test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update file formatter test" />
+    <MESSAGE value="Update files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update files." />
   </component>
 </project>
