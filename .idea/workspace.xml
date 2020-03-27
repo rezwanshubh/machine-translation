@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluation/rnmt_plus_et.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/sequence_et.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/transformer_et.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluation/unsupervised_et.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seq2seq/seq2seq_translation_tutorial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seq2seq/data/eng-fra.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluation/run_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/run_evaluation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,20 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564147007264</updated>
-    </task>
-    <task id="LOCAL-00003" summary="preparing files for parser.">
-      <created>1565364438852</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1565364438852</updated>
-    </task>
-    <task id="LOCAL-00004" summary="validation set, vocabulary ready.">
-      <created>1565985327080</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1565985327080</updated>
     </task>
     <task id="LOCAL-00005" summary="ready data preprocess.">
       <created>1565991446082</created>
@@ -530,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581246993303</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="seq2seq updated">
+      <created>1585304020418</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1585304020418</updated>
+    </task>
+    <task id="LOCAL-00053" summary="evaluation updated">
+      <created>1585304144030</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1585304144030</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,8 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete useless files" />
-    <MESSAGE value="adding readme." />
     <MESSAGE value="- directory refactoring&#10;- convert directory into module&#10;- rename 'rnn-plus' to 'rnn_plus'" />
     <MESSAGE value="remove unused import." />
     <MESSAGE value="Modify the implementation of RNMT+ based upon LSTM." />
@@ -573,6 +566,8 @@
     <MESSAGE value="Update initial script for evaluation" />
     <MESSAGE value="Update file formatter test" />
     <MESSAGE value="Update files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update files." />
+    <MESSAGE value="seq2seq updated" />
+    <MESSAGE value="evaluation updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="evaluation updated" />
   </component>
 </project>
