@@ -3,11 +3,9 @@
 Implementing a translation model using Sequence-to-Sequence architecture.
 
 ## Description
+According to following research paper in 'Sequence to Sequence Learning with Neural Networks',
 
-Last few years we have observed tremendous performance by Sequence-to-Sequence (seq2seq) modeling for machine translation. In the curve of this improvement, we have also been overwhelmed by another translation model named Transformer. In this following research paper, researchers combined all the latest training techniques into RNMT+ architecture. In this hybrid model, they showed that this approach outperforms all previous models for translation pairs of English-French or English-German. 
-
-However, in our implementation, we will use Relational-RNN instead of LSTM and evaluate the performance of the English-Estonian language pair.
-
+"It's a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Here a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector."
 
 ## Getting Started
 
@@ -19,11 +17,7 @@ However, in our implementation, we will use Relational-RNN instead of LSTM and e
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+To train the model I followed the steps explained in the following article. 
 
 ## License
 
@@ -32,7 +26,5 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [Combining Recent Advances in Neural Machine Translation](https://www.aclweb.org/anthology/P18-1008/)
-* [Relational recurrent neural networks](https://arxiv.org/abs/1806.01822)
-* [nmtlab](https://github.com/zomux/nmtlab)
-* [relational-rnn-pytorch](https://github.com/L0SG/relational-rnn-pytorch)
+* [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
+* [Sequnce to Sequence with pyTorch](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html)
