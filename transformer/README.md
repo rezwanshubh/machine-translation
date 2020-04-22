@@ -4,10 +4,9 @@ Implementing a translation model using Transformer architecture.
 
 ## Description
 
-Last few years we have observed tremendous performance by Sequence-to-Sequence (seq2seq) modeling for machine translation. In the curve of this improvement, we have also been overwhelmed by another translation model named Transformer. In this following research paper, researchers combined all the latest training techniques into RNMT+ architecture. In this hybrid model, they showed that this approach outperforms all previous models for translation pairs of English-French or English-German. 
+In Transformer architecture, researchers propose a new simple network architecture, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.
 
-However, in our implementation, we will use Relational-RNN instead of LSTM and evaluate the performance of the English-Estonian language pair.
-
+To develop this model, we used OpenNMT-py a pyTorch port for OpenNMT. To tokenize the text, we used SentencePiece, an unsupervised text tokenizer and detokenizer mainly for Neural Network-based text generation systems.
 
 ## Getting Started
 
@@ -15,15 +14,14 @@ However, in our implementation, we will use Relational-RNN instead of LSTM and e
 
 * Python 3.x
 * OpenNMT-py
+* SentencePiece
 * Linux
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+To train a translation model using Transformer architecture, we followed the procedures explained in the following project.
+
+[Building a translation model using OpenNMT-py](https://opennmt.net/OpenNMT-py/quickstart.html)
 
 ## License
 
@@ -32,7 +30,6 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [Combining Recent Advances in Neural Machine Translation](https://www.aclweb.org/anthology/P18-1008/)
-* [Relational recurrent neural networks](https://arxiv.org/abs/1806.01822)
-* [nmtlab](https://github.com/zomux/nmtlab)
-* [relational-rnn-pytorch](https://github.com/L0SG/relational-rnn-pytorch)
+* [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+* [OpenNMT-py](https://opennmt.net/OpenNMT-py/)
+* [SentencePiece](https://github.com/google/sentencepiece)
