@@ -1,6 +1,6 @@
 import nltk
 
-domain= 'domain-Movie_subtitle'
+domain= 'domain-movie-subtitle'
 
 reference = open(domain + "/et.txt", "r", encoding="utf8").read()
 hypothesis = open(domain + "/transformer_et.txt", "r", encoding="utf8").read()

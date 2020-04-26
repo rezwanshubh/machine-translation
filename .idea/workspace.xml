@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/evaluation/run_translate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/domain-EU-Law/en.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-eu-law/en.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/domain-EU-Law/et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-eu-law/et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/domain-EU-Law/rnmt_plus_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-eu-law/rnmt_plus_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/domain-EU-Law/sequence_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-eu-law/sequence_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/domain-EU-Law/transformer_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-eu-law/transformer_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/domain-EU-Law/unsupervised_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-eu-law/unsupervised_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/run_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/run_evaluation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
