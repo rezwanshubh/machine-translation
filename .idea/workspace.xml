@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-EU-Law/rnmt_plus_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-EU-Law/sequence_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-EU-Law/transformer_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-EU-Law/unsupervised_et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-Movie_subtitle/en.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-Movie_subtitle/et.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/domain-Movie_subtitle/unsupervised_et.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/transformer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/en.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-EU-Law/en.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-EU-Law/et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/rnmt_plus_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-Movie_subtitle/rnmt_plus_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/run_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/run_evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/sequence_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-Movie_subtitle/sequence_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/transformer_et.txt" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/domain-Movie_subtitle/transformer_et.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/unsupervised_et.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +46,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/test-10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\rezwan_personal\thesis\machine-translation\evaluation\domain-EU-Law" />
       <recent name="C:\rezwan_personal\thesis\machine-translation\rnn_plus\rnn_plus_model" />
       <recent name="C:\rezwan_personal\thesis\machine-translation\rnn_plus" />
       <recent name="C:\rezwan_personal\thesis\machine-translation\rnn-plus" />
