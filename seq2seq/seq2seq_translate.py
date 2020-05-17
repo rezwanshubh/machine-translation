@@ -412,7 +412,7 @@ def evaluateAndShowAttention():
 
     output_words, attentions = evaluate(
         encoder1, attn_decoder1, input_sentence)
-    
+
     output_sentence = ' '.join(output_words)
     file_tgt = open("et.result.txt", "w", encoding="utf-8")
     file_tgt.write(output_sentence)
