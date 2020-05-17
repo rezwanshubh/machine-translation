@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="100ef406-fd41-4d78-840f-2cadd661d9b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/transformer/preprocess.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/run_preprocess.sh" beforeDir="false" afterPath="$PROJECT_DIR$/transformer/run_preprocess.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/train.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/translate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/translate.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seq2seq/seq2seq_translation_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/seq2seq/seq2seq_translation_tutorial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
