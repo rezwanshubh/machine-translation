@@ -373,7 +373,7 @@ def evaluateRandomly(encoder, decoder, n=10):
         print('')
 
 
-hidden_size = 256
+hidden_size = 512
 encoder1 = EncoderRNN(input_lang.n_words, hidden_size).to(device)
 attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to(device)
 
@@ -382,7 +382,7 @@ trainIters(encoder1, attn_decoder1, 350000, print_every=5000)
 evaluateRandomly(encoder1, attn_decoder1)
 
 output_words, attentions = evaluate(
-    encoder1, attn_decoder1, "je suis trop froid .")
+    encoder1, attn_decoder1, "")
 plt.matshow(attentions.numpy())
 
 
