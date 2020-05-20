@@ -171,15 +171,15 @@ def main():
 
     parser.add_argument('-data', required=True)
 
-    parser.add_argument('-epoch', type=int, default=500)
-    parser.add_argument('-batch_size', type=int, default=64)
+    #parser.add_argument('-epoch', type=int, default=500)
+    parser.add_argument('-batch_size', type=int, default=4096)
 
     parser.add_argument('-d_model', type=int, default=512)
-    parser.add_argument('-d_inner_hid', type=int, default=2048)
+    parser.add_argument('-d_hidden_size', type=int, default=512)
 
     parser.add_argument('-n_head', type=int, default=8)
     parser.add_argument('-n_layers', type=int, default=6)
-    parser.add_argument('-n_warmup_steps', type=int, default=4000)
+    parser.add_argument('-n_steps', type=int, default=350000)
 
     parser.add_argument('-dropout', type=float, default=0.1)
 
