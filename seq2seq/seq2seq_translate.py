@@ -70,7 +70,7 @@ def readLangs(lang1, lang2, reverse=False):
 
     return input_lang, output_lang, pairs
 
-MAX_LENGTH = 10
+MAX_LENGTH = 50
 
 def filterPair(p):
     return len(p[0].split(' ')) < MAX_LENGTH and \
